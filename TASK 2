@@ -1,0 +1,37 @@
+Question:
+Use data types: Number, String, Boolean, Null, Undefined, Object, Symbol
+Demonstrate type conversion: String(), Number(), implicit conversion
+Convert string ↔ number
+code:
+let num = 42;
+let str = "Hello";
+let bool = true;
+let nothing = null;
+let notDefined;
+let obj = { key: "value" };
+let sym = Symbol("id");
+
+console.log(typeof num);
+console.log(typeof str);
+console.log(typeof bool);
+console.log(typeof nothing);
+console.log(typeof notDefined);
+console.log(typeof obj);
+console.log(typeof sym);
+
+let numToStr = String(num);
+let strToNum = Number("123");
+let implicitNum = "5" * 2;
+let strPlusNum = "5" + 2;
+
+console.log(numToStr);
+console.log(typeof numToStr);
+console.log(strToNum);
+console.log(typeof strToNum);
+console.log(implicitNum);
+console.log(typeof implicitNum);
+console.log(strPlusNum);
+console.log(typeof strPlusNum);
+
+
+
