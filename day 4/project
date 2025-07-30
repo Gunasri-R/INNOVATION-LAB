@@ -1,0 +1,26 @@
+// student grade professor 
+let students = [
+  { name: "alice", score: 45.6 },
+  { name: "bob", score: 75.4 },
+  { name: "charlie", score: 33.8 }
+];
+
+// Round scores
+students.forEach(s => s.score = Math.round(s.score));
+
+// Capitalize names
+students.forEach(s => s.name = s.name.charAt(0).toUpperCase() + s.name.slice(1));
+
+// Print names & scores
+students.forEach(s => console.log(`${s.name}: ${s.score}`));
+
+// Pass/Fail using map
+let status = students.map(s => (s.score >= 50 ? "Pass" : "Fail"));
+console.log("Status:", status);
+
+// Congratulate students who passed
+for (let s of students) {
+  if (s.score >= 50) {
+    console.log(`Congrats ${s.name}! You scored ${s.score}`);
+  }
+}
