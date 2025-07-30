@@ -1,8 +1,7 @@
 1.What does Math.floor(4.7) return?
 
 Answer:
-
-👉 Math.floor(4.7) returns 4
+Math.floor(4.7) returns 4
 
 Reason:
 Math.floor() in JavaScript always rounds down to the nearest integer, regardless of the decimal value.
