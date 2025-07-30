@@ -1,0 +1,19 @@
+ Question :Use var, let, const
+Output messages to console
+Modify variables and observe output
+
+code:
+
+var name = "Gunasri";
+let age = 18;
+const college = "KG College";
+
+console.log("Hello, my name is " + name);
+console.log("I am " + age + " years old.");
+console.log("I study at " + college);
+
+name = "Gunasri";
+age = 19;
+
+console.log("Updated name: " + name);
+console.log("Updated age: " + age);
