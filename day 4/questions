@@ -1,0 +1,52 @@
+1.What does Math.floor(4.7) return?
+
+Answer:
+
+👉 Math.floor(4.7) returns 4
+
+Reason:
+Math.floor() in JavaScript always rounds down to the nearest integer, regardless of the decimal value.
+
+Examples:
+
+Math.floor(4.7); // 4
+Math.floor(4.3); // 4
+Math.floor(-4.7); // -5 
+2. How to convert a string to uppercase?
+
+answer: .toUpperCase()
+
+"hello".toUpperCase(); // answer:"HELLO"
+
+3. What is the difference between forEach and map?
+-> forEach loops through items and does not return a new array,
+->map loops and returns a new transformed array.
+
+[1,2,3].forEach(x => console.log(x)); // Output :1,2,3  
+[1,2,3].map(x => x*2); // output returns [2,4,6]
+
+
+4. What does for-in iterate over in arrays?
+
+-> for-in iterates over the indexes (keys) of an array.
+
+let arr = ["a","b"];
+for (let i in arr) console.log(i); // 0, 1
+
+
+5. Predict the output of the code using .map() on an array.
+
+-> .map() creates a new array with modified values.
+Example:
+
+[1,2,3].map(x => x*2); // Output: [2,4,6]
+
+
+6. What does Math.floor(4.7) return?
+
+->4 (it rounds down to the nearest integer).
+
+
+
+
+
