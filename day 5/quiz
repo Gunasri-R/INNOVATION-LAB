@@ -1,0 +1,45 @@
+1. What does filter() return?
+It returns a new array with elements that pass a condition.
+example:
+const nums = [5, 12, 8];
+const result = nums.filter(n => n > 10);
+console.log(result); // [12]
+
+2. How does reduce() work in JavaScript?
+It combines all array values into one result.
+example:
+const nums = [1, 2, 3];
+const total = nums.reduce((a, b) => a + b, 0);
+console.log(total); // 6
+
+3. Difference between slice() and splice()
+
+slice() returns a part of array (no change)
+
+splice() changes the array (adds/removes)
+
+example :
+const arr = [1, 2, 3, 4];
+console.log(arr.slice(1, 3)); 
+arr.splice(1, 2);
+console.log(arr); 
+
+
+4. What is the spread operator used for?
+It is used to copy or merge arrays/objects.
+example:
+const a = [1, 2];
+const b = [...a, 3];
+console.log(b); 
+
+
+5. How to define a method inside an object?
+A method is a function inside an object.
+example:
+const person = {
+  name: "abc",
+  greet() {
+    console.log("Hello " + this.name);
+  }
+};
+person.greet(); 
