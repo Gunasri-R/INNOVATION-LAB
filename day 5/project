@@ -1,0 +1,32 @@
+let products = [
+  { id: 1, name: "Pen", price: 10, quantity: 2 },
+  { id: 2, name: "Book", price: 50, quantity: 0 }
+];
+
+let available = products.filter(p => p.quantity > 0);
+console.log(available);
+
+let total = available.reduce((t, p) => t + p.price * p.quantity, 0);
+console.log(total);
+
+let part = products.slice(0, 1);
+console.log(part);
+
+products.splice(1, 1);
+console.log(products);
+
+let newList = [...products, { id: 3, name: "Pencil", price: 5, quantity: 3 }];
+console.log(newList);
+
+let item = {
+  id: 4,
+  name: "Eraser",
+  price: 5,
+  show() {
+    console.log(this.name, this.price);
+  }
+};
+item.show();
+
+let { name, price } = item;
+console.log(name, price);
