@@ -1,0 +1,28 @@
+Q1. How do you destructure an object with nested properties?
+let user={name:"Guna",info:{city:"Coimbatore"}};
+let {name,info:{city}}=user;
+console.log(name,city);
+
+Q2. How do you use rest parameters?
+function sum(...nums){return nums.reduce((a,b)=>a+b);}
+console.log(sum(1,2,3,4));
+
+Q3. How do you use the spread operator?
+let a=[1,2],b=[3,4];
+let c=[...a,...b];
+console.log(c);
+
+Q4. What is the difference between call(), apply(), and bind()?
+let p={name:"gunasri"};
+function hi(x){console.log(this.name,x);}
+hi.call(p,"call");
+hi.apply(p,["apply"]);
+let h=hi.bind(p,"bind");h();
+call() → pass arguments one by one
+apply() → pass arguments in array
+bind() → makes a new function with fixed this
+
+
+Q5. How to iterate over object keys and values?
+let obj={a:1,b:2};
+for(let k in obj){console.log(k,obj[k]);}
