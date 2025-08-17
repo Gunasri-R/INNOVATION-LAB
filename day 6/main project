@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input id="name" placeholder="Name">
+<input id="salary" placeholder="Salary">
+<button onclick="add()">Add</button>
+<button onclick="removeEmp()">Remove</button>
+<ul id="list"></ul>
+<script>
+let emps=[];
+function add(){
+  let n=name.value,s=+salary.value;
+  emps.push({n,s});show();
+}
+function removeEmp(){
+  let n=name.value;
+  emps=emps.filter(e=>e.n!==n);show();
+}
+function show(){
+  list.innerHTML="";
+  emps.forEach(e=>list.innerHTML+=`<li>${e.n}-${e.s}</li>`);
+}
+</script>
+</body>
+</html>
