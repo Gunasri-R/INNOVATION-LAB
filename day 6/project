@@ -1,0 +1,14 @@
+let contacts=[
+  {name:"Alice",phone:"123"},
+  {name:"Bob",phone:"456"}
+];
+
+function show({name,phone}){console.log(name,phone);}
+contacts.forEach(show);
+
+function add(...c){contacts.push(...c);}
+add({name:"Charlie",phone:"789"});
+
+let more=[{name:"David",phone:"999"}];
+let all=[...contacts,...more];
+console.log(all);
