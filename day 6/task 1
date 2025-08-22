@@ -1,4 +1,4 @@
-let user={name:"Guna",age:18,address:{city:"Coimbatore",pin:641107}};
+let user={name:"Gunasri",age:18,address:{city:"Coimbatore",pin:641107}};
 let {name,address:{city}}=user;
 console.log(name,city);
 console.log(user["age"]);
