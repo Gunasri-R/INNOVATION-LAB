@@ -1,4 +1,4 @@
-let person={name:"guna"};
+let person={name:"gunasri"};
 function hello(msg){console.log(this.name,msg);}
 hello.call(person,"from call");
 hello.apply(person,["from apply"]);
